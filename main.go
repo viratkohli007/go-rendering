@@ -56,7 +56,7 @@ func Display(w http.ResponseWriter, r *http.Request) {
    if err != nil{
    	fmt.Println(err)
    }
-   fmt.Println(data)
+   //fmt.Println(data)
 
    var Dataobj1 []Data
     err2 := json.Unmarshal(data ,&Dataobj1)
