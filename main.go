@@ -1,5 +1,6 @@
 package main
 import (
+
 		"fmt"
 		"net/http"
 		"html/template"
@@ -7,8 +8,8 @@ import (
 		"io/ioutil"
 		"encoding/json"
 		"os"
-	   )
 
+	   )
 type Data struct{
   Name string `json:"name"`
   Age string `json:"age"`
@@ -63,7 +64,7 @@ func Display(w http.ResponseWriter, r *http.Request) {
     if err2 != nil{
     	log.Fatal(err2)
     }
-   //fmt.Println(Dataobj1)
+   fmt.Println(Dataobj1)
 
     d := Data{
     	Name: r.FormValue("name"),
